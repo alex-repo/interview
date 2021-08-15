@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<documentMetadata xmlns="http://ufs.sbrf.ru/platform/history/history-entity-storage"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:schemaLocation="http://ufs.sbrf.ru/platform/history/history-entity-storage http://ufs.sbrf.ru/platform/history/history-entity-storage">
+    <storage name="UfsSberPayConnectRequest" table="REQ_SBERPAY_CONNECT" documentType="UfsSberPayConnectRequest" attributesStoreType="CLOB">
+
+    <index name="id"                         column="ENTITY_ID"                    javaType="java.lang.String"   nullable="false"/>
+    <index name="number"                     column="REQ_NUM"                      javaType="java.lang.String"                                      nullable="true"/>
+    <index name="status"                     column="REQ_STATUS"                   javaType="java.lang.String"                                      nullable="false"/>
+    <index name="createdDate"                column="REQ_CREATED_DATE"             javaType="java.util.Date"                           nullable="false"/>
+    <index name="createdDatePart"            column="REQ_CREATED_DATE_PART"        javaType="java.util.Date"                                        nullable="true"/>
+    <index name="resolvedDate"               column="REQ_RESOLVED_DATE"            javaType="java.util.Date"                           nullable="true"/>
+    <index name="lastUpdatedDate"            column="REQ_UPDATED_DATE"             javaType="java.util.Date"                           nullable="true"/>
+    <index name="user"                       column="REQ_USER"                     javaType="java.lang.String"                                      nullable="true"/>
+    <index name="departure"                  column="REQ_DEPARTURE"                javaType="java.lang.String"                                      nullable="true"/>
+    <index name="clientId"                   column="REQ_CLIENT_ID"                javaType="java.lang.String"                                      nullable="true"/>
+    <index name="product"                    column="REQ_PRODUCT"                  javaType="java.lang.String"                                      nullable="true"/>
+    <index name="counterpartyId"             column="REQ_COUNTERPARTY_ID"          javaType="java.lang.String"                                      nullable="true"/>
+    <index name="counterpartyType"           column="REQ_COUNTERPARTY_TYPE"        javaType="java.lang.String" nullable="true"/>
+    <index name="agreementId"                column="REQ_AGREEMENT_ID"             javaType="java.lang.String"                                      nullable="true"/>
+    <index name="mdmId"                      column="REQ_MDM_ID"                   javaType="java.lang.String"                                      nullable="true"/>
+    <index name="eribId"                     column="REQ_ERIB_ID"                  javaType="java.lang.String"                                      nullable="true"/>
+    <index name="backOfficeEntityId"         column="REQ_BACK_OFFICE_ENTITY_ID"    javaType="java.lang.String"                                      nullable="true"/>
+    <index name="chargeResId"                column="REQ_CHARGE_RES_ID"            javaType="java.lang.Long"                                        nullable="true"/>
+    <index name="chargeResName"              column="REQ_CHARGE_RES_NAME"          javaType="java.lang.String"                                      nullable="true"/>
+    <index name="chargeResNumber"            column="REQ_CHARGE_RES_NUMBER"        javaType="java.lang.String"                                      nullable="true"/>
+    <index name="chargeResType"              column="REQ_CHARGE_RES_TYPE"          javaType="java.lang.String"                                      nullable="true"/>
+    <index name="receiverResId"              column="REQ_RECEIVER_RES_ID"          javaType="java.lang.Long"                                        nullable="true"/>
+    <index name="receiverResName"            column="REQ_RECEIVER_RES_NAME"        javaType="java.lang.String"                                      nullable="true"/>
+    <index name="receiverResNumber"          column="REQ_RECEIVER_RES_NUMBER"      javaType="java.lang.String"                                      nullable="true"/>
+    <index name="receiverResType"            column="REQ_RECEIVER_RES_TYPE"        javaType="java.lang.String"                                      nullable="true"/>
+    <index name="receiverName"               column="REQ_RECEIVER_NAME"            javaType="java.lang.String"                                      nullable="true"/>
+    <index name="documentType"               column="REQ_DOC_TYPE"                 javaType="java.lang.String"                                      nullable="false"/>
+    <index name="statusDescription"          column="REQ_STATUS_DESCRIPTION"       javaType="java.lang.String"                                      nullable="true"/>
+    <index name="systemStatus"               column="REQ_SYSTEM_STATUS"            javaType="java.lang.String"                                      nullable="true"/>
+    <index name="documentAmount"             column="REQ_DOC_AMOUNT"               javaType="java.math.BigDecimal"                                  nullable="true"/>
+    <index name="chargeAmountCurrencyCode"   column="REQ_CHARGE_AMOUNT_CUR_CODE"   javaType="java.lang.String"                                      nullable="true"/>
+    <index name="receiverAmountCurrencyCode" column="REQ_RECEIVER_AMOUNT_CUR_CODE" javaType="java.lang.String"                                      nullable="true"/>
+    <index name="operationDescription"       column="REQ_OP_DESCR"                 javaType="java.lang.String"                                      nullable="true"/>
+    <index name="bankInfoRbTbBrchId"         column="REQ_BANKINFO_RB_TB_BRCH_ID"   javaType="java.lang.String"                                      nullable="true"/>
+    <index name="channel"                    column="REQ_CHANNEL"                  javaType="java.lang.String"                                      nullable="false"/>
+    <index name="comments"                   column="REQ_COMMENTS"                 javaType="java.lang.String"                                      nullable="true"/>
+    <index name="commentToBlock"             column="REQ_COMMENT_TO_BLOCK"         javaType="java.lang.String"                                      nullable="true"/>
+    <index name="blockClient"                column="REQ_BLOCK_CLIENT"             javaType="java.lang.String"                                      nullable="true"/>
+    <index name="confirmType"                column="REQ_CONFIRM_TYPE"             javaType="java.lang.String"                                      nullable="true"/>
+    <index name="isVisible"                  column="REQ_IS_VISIBLE"               javaType="java.lang.Boolean"                                     nullable="false"/>
+    <index name="version"                    column="REQ_VERSION"                  javaType="java.lang.Long"                                        nullable="true"/>
+    <index name="clientTransactionId"        column="REQ_CLIENT_TRANSACTION_ID"    javaType="java.lang.String"                                      nullable="true"/>
+    <index name="operationUid"               column="REQ_OPERATION_UID"            javaType="java.lang.String"                                      nullable="false"/>
+    <index name="modifiedDate"               column="REQ_MODIFIED_DATE"            javaType="java.util.Date"                           nullable="true"/>
+    <index name="modifiedBlock"              column="REQ_MODIFIED_BLOCK"           javaType="java.lang.String"                                      nullable="true"/>
+    <index name="idV6"                       column="REQ_ID_V6"                    javaType="java.lang.String"                                      nullable="true"/>
+    <index name="reqOperationUuidV6"         column="REQ_OPERATION_UUID_V6"        javaType="java.lang.String"                                      nullable="true"/>
+    <index name="documentAmountCurrencyCodeV6" column="REQ_AMOUNT_CUR_CODE_V6"     javaType="java.lang.String"                                      nullable="true"/>
+    <index name="originBlockIdUfs"           column="REQ_ORIGIN_BLOCK_ID_UFS"      javaType="java.lang.String"                                      nullable="true"/>
+    <index name="originEribId"               column="REQ_ORIGIN_ERIB_ID"           javaType="java.lang.String"                                      nullable="true"/>
+    <index name="accountingTransactionType"  column="REQ_ACCOUNTING_TRANSACTION_TYPE" javaType="java.lang.String" nullable="true"/>
+    <index name="currency"                   column="REQ_CURRENCY"                 javaType="java.lang.String"                                      nullable="true"/>
+    <index name="nationalSumm"               column="REQ_NATIONAL_SUMM"            javaType="java.math.BigDecimal"                                  nullable="true"/>
+    <index name="mccCode"                    column="REQ_MCC_CODE"                 javaType="java.lang.Long"                                        nullable="true"/>
+    <index name="commission"                 column="REQ_COMMISSION"               javaType="java.math.BigDecimal"                                  nullable="true"/>
+    <index name="commissionCurrency"         column="REQ_COMMISSION_CUR"           javaType="java.lang.String"                                      nullable="true"/>
+    <index name="additionalId"               column="REQ_ADDITIONAL_ID"            javaType="java.lang.String"                                      nullable="true"/>
+    <index name="chargeResAmount"            column="REQ_CHARGE_RES_AMOUNT"        javaType="java.math.BigDecimal"                                  nullable="true"/>
+    <index name="receiverResAmount"          column="REQ_RECEIVER_RES_AMOUNT"      javaType="java.math.BigDecimal"                                  nullable="true"/>
+    <index name="additionalAttributes"       column="REQ_ADDITIONAL_ATTR"          javaType="java.lang.String"                                      nullable="true"/>
+    <index name="backOfficeSystem"           column="REQ_BACK_OFFICE_SYSTEM"       javaType="java.lang.String"                                      nullable="true"/>
+    <index name="sudirId"                    column="REQ_SUDIR_ID"                 javaType="java.lang.String"                                      nullable="true"/>
+    <index name="employeeInfoId"             column="REQ_EMPLOYEE_INFO_ID"         javaType="java.lang.String"                                      nullable="true"/>
+    <index name="clientName"                 column="CLIENT_NAME"                  javaType="java.lang.String"                                      nullable="false"/>
+    <index name="operationDate"              column="OPERATION_DATE"               javaType="java.util.Date"                           nullable="true"/>
+    <index name="executionDate"              column="EXECUTION_DATE"               javaType="java.util.Date"                           nullable="true"/>
+    <index name="documentDate"               column="DOCUMENT_DATE"                javaType="java.util.Date"                           nullable="false"/>
+    <index name="sessionId"                  column="SESSION_ID"                   javaType="java.lang.String"                                      nullable="false"/>
+    <index name="terminalId"                 column="TERMINAL_ID"                  javaType="java.lang.String"                                      nullable="false"/>
+    <index name="orderNumber"                column="ORDER_NUMBER"                 javaType="java.lang.String"                                      nullable="true"/>
+    <index name="rrn"                        column="RRN"                          javaType="java.lang.String"                                      nullable="true"/>
+    <index name="authorizationCode"          column="AUTHORIZATION_CODE"           javaType="java.lang.String"                                      nullable="true"/>
+    <index name="svNodeId"                   column="SV_NODE_ID"                   javaType="java.lang.String"                                      nullable="true"/>
+    <index name="orderLifeTime"              column="ORDER_LIFE_TIME"              javaType="java.lang.Integer"                                     nullable="true"/>
+    <index name="orderCreationDateTime"      column="ORDER_CREATION_DATE_TIME"     javaType="java.util.Date"                           nullable="true"/>
+    <index name="cardTitle"                  column="CARD_TITLE"                   javaType="java.lang.String"                                      nullable="true"/>
+    <index name="cardType"                   column="CARD_TYPE"                    javaType="java.lang.String"                                      nullable="true"/>
+    <index name="cardNumber"                 column="CARD_NUMBER"                  javaType="java.lang.String"                                      nullable="true"/>
+    <index name="paySystemType"              column="PAY_SYSTEM_TYPE"              javaType="java.lang.String"                                      nullable="true"/>
+    <index name="cardBalance"                column="CARD_BALANCE"                 javaType="java.math.BigDecimal"                                  nullable="true"/>
+    <index name="merchantName"               column="MERCHANT_NAME"                javaType="java.lang.String"                                      nullable="true"/>
+    <index name="paymentScenario"            column="PAYMENT_SCENARIO"             javaType="java.lang.String"                                      nullable="false"/>
+    <index name="isRecurringPayment"         column="IS_RECURRING_PAYMENT"         javaType="java.lang.Boolean"                                     nullable="false"/>
+    <index name="textForClient"              column="TEXT_FOR_CLIENT"              javaType="java.lang.String"                                      nullable="true"/>
+    <index name="bindingIsNeeded"            column="BINDING_IS_NEEDED"            javaType="java.lang.Boolean"                                     nullable="false"/>
+    <index name="recalledDate"               column="RECALLED_DATE"                javaType="java.util.Date"                           nullable="true"/>
+    <index name="recalledId"                 column="RECALLED_ID"                  javaType="java.lang.String"                                      nullable="true"/>
+    <index name="mobilePhoneNumber"          column="MOBILE_PHONE_NUMBER"          javaType="java.lang.String"                                      nullable="true"/>
+    </storage>
+    <statuses>
+        <finalStatus>EXECUTED</finalStatus>
+        <finalStatus>RECALLED</finalStatus>
+        <finalStatus>REFUSED</finalStatus>
+    </statuses>
+</documentMetadata>
